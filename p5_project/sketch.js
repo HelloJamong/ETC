@@ -5,7 +5,7 @@ function setup() {
 
 function draw() {
   background(220);
-
+  //다중 원 그리기
   ellipse(300, 300, 500, 500);
   ellipse(300, 300, 400, 400);
   ellipse(300, 300, 300, 300);
