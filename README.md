@@ -12,3 +12,19 @@
 - 프로그래밍 2 : C++ 및 WASM
 - 미디어앤테크 : p5.js
 - AI와 데이터기초 : python
+
+## 프로젝트별 실행 방법
+
+### cpp_project (C++ 프로젝트)
+**컴파일:**
+```bash
+cd cpp_project
+g++ main.cpp math_utils.cpp -o main
+```
+
+**실행:**
+```bash
+./main
+```
+
+**기능:** 수학 유틸리티 함수(add)를 사용한 기본 C++ 프로그램

@@ -2,8 +2,8 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: clang 활성 파일 빌드",
-            "command": "/usr/bin/clang",
+            "label": "C/C++: clang++ 활성 파일 빌드",
+            "command": "/usr/bin/clang++",
             "args": [
                 "-fcolor-diagnostics",
                 "-fansi-escape-codes",
@@ -22,7 +22,22 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "디버거에서 생성된 작업입니다."
+            "detail": "컴파일러: /usr/bin/clang++"
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: 빌드 및 실행",
+            "command": "/usr/bin/clang++ -g '${file}' -o '${fileDirname}/${fileBasenameNoExtension}' && '${fileDirname}/${fileBasenameNoExtension}'",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "options": {
+                "cwd": "${fileDirname}"
+            }
         }
     ],
     "version": "2.0.0"
