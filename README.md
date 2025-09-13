@@ -19,12 +19,10 @@
 **컴파일:**
 ```bash
 cd cpp_project
-g++ main.cpp math_utils.cpp -o main
+g++ main.cpp -o main
 ```
 
 **실행:**
 ```bash
 ./main
 ```
-
-**기능:** 수학 유틸리티 함수(add)를 사용한 기본 C++ 프로그램
