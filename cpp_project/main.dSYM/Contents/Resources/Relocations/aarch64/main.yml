@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/hellowook/Dev/VS_Code/SSU/cpp_project/main'
+relocations:     []
+...
