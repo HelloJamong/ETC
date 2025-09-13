@@ -1,0 +1,50 @@
+# C++ 컴파일 산출물
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# 실행 파일 (확장자 없는)
+main
+week1-*
+week2-*
+week3-*
+hw*
+assignment*
+test*
+
+# 디버그 심볼
+*.dSYM/
+*.pdb
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# 운영체제별 파일
+.DS_Store
+Thumbs.db
+
+# 임시 파일
+*~
+*.swp
+*.tmp
+
+# CMake 빌드 파일
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# IDE별 설정 파일
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+
+# 로그 파일
+*.log
