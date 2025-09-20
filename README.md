@@ -26,3 +26,9 @@ g++ main.cpp -o main
 ```bash
 ./main
 ```
+
+### python_project (python 프로젝트)
+**실행 및 컴파일:**
+```
+python3 main.py
+```
