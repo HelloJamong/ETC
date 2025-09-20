@@ -7,12 +7,16 @@
 
 # 실행 파일 (확장자 없는)
 main
-week1-*
-week2-*
-week3-*
-hw*
-assignment*
-test*
+week1-[0-9]*
+week2-[0-9]*
+week3-[0-9]*
+hw[0-9]*
+assignment[0-9]*
+test[0-9]*
+!*.cpp
+!*.py
+!*.c
+!*.h
 
 # 디버그 심볼
 *.dSYM/
