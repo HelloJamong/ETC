@@ -36,3 +36,17 @@ elif num1 % 2 == 0 or num2 % 2 == 0 :
     print("One Even")
 else :
     print("Both Odd")
+
+
+#5. 정수 3개를 입력 받아, 가장 큰 수를 출력하는 프로그램을 작성하여라
+n1 = input()
+n2 = input()
+n3 = input()
+
+max_num = n1
+if n2 > max_num:
+    max_num = n2
+if n3 > max_num:
+    max_num = n3
+
+print(max_num)
