@@ -52,14 +52,11 @@ int main(){
 
     //5. 정수 3개를 입력 받아, 가장 큰 수를 출력하는 프로그램을 작성하여라
     int n1, n2, n3;
-    int max_num = 0;
     cin >> n1 >> n2 >> n3;
-    if (n1 > n2 && n1 > n3){
-        max_num = n1;
-    }else if(n2 > n1 && n2 > n3){
-        max_num = n2;
-    }else{
-        max_num = n3;
-    }
-    cout << n3 << endl;
+
+    int max_num = n1;
+    if (n2 > max_num) max_num = n2;
+    if (n3 > max_num) max_num = n3;
+
+    cout << max_num << endl;
 }
