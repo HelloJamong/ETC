@@ -16,8 +16,8 @@ for i in range(1,101):
 
 #4. 사용자가 0을 입력할 때까지 정수를 계속 입력받고, 입력한 수들의 평균을 구하는 프로그램을 작성하시오.
 result = 0
-while(true):
-    number = input()
+while(True):
+    number = int(input())
     if number == 0:
         break
     else:
