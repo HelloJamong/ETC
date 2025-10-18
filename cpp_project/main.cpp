@@ -1,20 +1,16 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-	/*
-	매크로 사용법
-	double r = 5.0;
-	cout << "원의 넓이 : " << PI * SQUARE(r) << endl;
+void show_message(string msg = "Hi") {
+    cout << msg << endl;
+}
 
-	헤더를 사용한 함수 호출
-	std::cout << add(3, 4) << std::endl;
+int main(){
+	show_message();       // 출력: Hi
+	show_message("Bye");  // 출력: Bye
 	
-	문자 입력 및 출력
-	std::string txt;
-	std::cin >> txt;
-	std::cout << txt << std::endl;
-	std::cout << "Hello, World!" << std::endl;
-	*/
 	return 0;
 }
+
+
+
