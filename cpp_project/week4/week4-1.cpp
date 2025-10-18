@@ -15,7 +15,7 @@ int maxValue(int a, int b){
     }
 }
 
-void addFive(int x = 5){
+void addFive(int x = 0){
     cout << x + 5 << endl;
 }
 
@@ -44,6 +44,7 @@ int main(){
     //정수를 하나 입력받고, 매개 변수에 5를 더한 결과를 출력하는 addFive 함수를 작성하고 파라미터를 입력하지 않으면 5를 출력한다.
     int number;
     cin >> number;
+    addFive();
     addFive(number);
 
     //5.오버로딩
