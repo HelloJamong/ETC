@@ -28,15 +28,6 @@ int findMax(int* arr, int size) {
     return max;
 }
 
-// 4-2. 문자열 복사 함수
-void myStrcpy(char* dest, const char* src) {
-    while(*src != '\0') {
-        *dest = *src;
-        dest++;
-        src++;
-    }
-    *dest = '\0';  // null 문자 추가
-}
 
 int main(){
     /*
@@ -111,44 +102,6 @@ int main(){
     int arraySize = 5;
     int maxValue = findMax(numbers, arraySize);
     cout << "\n배열의 최대값: " << maxValue << endl;
-
-
-    /*
-    4단계: 동적 메모리와 포인터 연산
-    1. 동적 배열 생성 및 초기화
-    - 사용자로부터 정수 n을 입력받아, new를 이용해 크기 n짜리 동적 배열을 만들고, 1부터 n까지 채운 뒤 출력하라.
-    */
-    int n;
-    cout << "\n배열 크기 입력: ";
-    cin >> n;
-
-    int* dynamicArr = new int[n];  // 동적 배열 생성
-
-    // 1부터 n까지 배열에 채우기
-    for(int i = 0; i < n; i++) {
-        *(dynamicArr + i) = i + 1;
-    }
-
-    // 배열 출력
-    cout << "동적 배열 출력: ";
-    for(int i = 0; i < n; i++) {
-        cout << *(dynamicArr + i) << " ";
-    }
-    cout << endl;
-
-    delete[] dynamicArr;  // 동적 메모리 해제
-
-
-    /*
-    2. 문자열 복사 함수 구현
-    - 포인터를 사용하여 C 스타일 문자열 복사 함수를 직접 구현하라. (strcpy 함수와 같은 기능)
-    */
-    char source[] = "Hello, World!";
-    char destination[50];
-
-    cout << "\n원본 문자열: " << source << endl;
-    myStrcpy(destination, source);
-    cout << "복사된 문자열: " << destination << endl;
 
     return 0;
 }
